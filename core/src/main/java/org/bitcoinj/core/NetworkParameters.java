@@ -162,12 +162,6 @@ public abstract class NetworkParameters {
         return TestNet3Params.get();
     }
 
-    /** Alias for TestNet2Params.get(), use that instead. */
-    @Deprecated
-    public static NetworkParameters testNet2() {
-        return TestNet2Params.get();
-    }
-
     /** Alias for TestNet3Params.get(), use that instead. */
     @Deprecated
     public static NetworkParameters testNet3() {
@@ -523,6 +517,7 @@ public abstract class NetworkParameters {
         MINIMUM(70000),
         PONG(60001),
         BLOOM_FILTER(70000),
+        WITNESS_VERSION(70012),
         CURRENT(70012);
 
         private final int bitcoinProtocol;
